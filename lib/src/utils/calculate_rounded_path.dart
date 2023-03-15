@@ -35,7 +35,7 @@ Path calculateRoundedArcPath(
   final centerRadius = radius - halfThickness;
   final outerRadius = radius;
 
-  final cornerAngle = getArcAngle(halfThickness, centerRadius);
+  final cornerAngle = getArcAngle(halfThickness / 2, centerRadius);
   final largeArcMinAngle = 180.0 + toDegrees(cornerAngle * 2);
 
   final axisStartAngle = toRadians(startAngle) + cornerAngle;
@@ -58,7 +58,7 @@ Path calculateRoundedArcPath(
     )
     ..arcToPoint(
       endInnerPoint,
-      radius: Radius.circular(thickness),
+      radius: Radius.zero,
     )
     ..arcToPoint(
       startInnerPoint,
@@ -68,7 +68,7 @@ Path calculateRoundedArcPath(
     )
     ..arcToPoint(
       startOuterPoint,
-      radius: Radius.circular(thickness),
+      radius: Radius.zero,
     );
 
   return axisSurface;
