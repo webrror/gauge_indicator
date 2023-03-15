@@ -26,7 +26,7 @@ class NeedlePointer extends Equatable implements GaugePointer {
         path = roundedPoly([
           VertexDefinition(0, size.height), // bottom left
           VertexDefinition(size.width, size.height), // bottom right
-          VertexDefinition(size.width, 0, radius: 20), // top center
+          VertexDefinition(size.width, 0, radius: 4), // top center
         ], borderRadius ?? size.width / 2);
 
   @override
