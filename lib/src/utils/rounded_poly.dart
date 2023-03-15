@@ -115,7 +115,7 @@ Path roundedPoly(
     }
 
     path.arcTo(
-      Rect.fromCircle(center: Offset(x, y), radius: cRadius),
+      Rect.fromCircle(center: Offset(x - 1, y), radius: cRadius),
       startAngle,
       toSweepAngle(startAngle, endAngle),
       false,
