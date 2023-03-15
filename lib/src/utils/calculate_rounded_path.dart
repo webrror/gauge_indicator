@@ -58,7 +58,7 @@ Path calculateRoundedArcPath(
     )
     ..arcToPoint(
       endInnerPoint,
-      radius: Radius.circular(halfThickness),
+      radius: const Radius.circular(0),
     )
     ..arcToPoint(
       startInnerPoint,
@@ -68,7 +68,7 @@ Path calculateRoundedArcPath(
     )
     ..arcToPoint(
       startOuterPoint,
-      radius: Radius.circular(halfThickness),
+      radius: const Radius.circular(0),
     );
 
   return axisSurface;
