@@ -35,7 +35,7 @@ Path calculateRoundedArcPath(
   final centerRadius = radius - halfThickness;
   final outerRadius = radius;
 
-  final cornerAngle = getArcAngle(halfThickness / 2, centerRadius);
+  final cornerAngle = getArcAngle(halfThickness / 2 - 5, centerRadius);
   final largeArcMinAngle = 180.0 + toDegrees(cornerAngle * 2);
 
   final axisStartAngle = toRadians(startAngle) + cornerAngle;
