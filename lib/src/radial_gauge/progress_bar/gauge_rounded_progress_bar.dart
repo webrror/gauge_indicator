@@ -37,7 +37,8 @@ class GaugeRoundedProgressBar extends Equatable implements GaugeProgressBar {
 
     final paint = Paint()
       ..style = PaintingStyle.fill
-      ..isAntiAlias = true;
+      ..isAntiAlias = true
+      ..strokeJoin = StrokeJoin.miter;
 
     if (shader != null) {
       paint.shader = shader!;
