@@ -32,10 +32,12 @@ class GaugeRoundedProgressBar extends Equatable implements GaugeProgressBar {
       layout.circleRect,
       to: progress,
       degrees: axis.degrees,
-      thickness: axis.style.thickness,
+      thickness: axis.style.thickness + 2,
     );
 
-    final paint = Paint()..style = PaintingStyle.fill;
+    final paint = Paint()
+      ..style = PaintingStyle.fill
+      ..isAntiAlias = true;
 
     if (shader != null) {
       paint.shader = shader!;
