@@ -27,7 +27,7 @@ class GaugeAxisStyle extends Equatable {
   ) =>
       GaugeAxisStyle(
         thickness: lerpDouble(begin.thickness, end.thickness, t),
-        background: Color.lerp(begin.background, end.background, t),
+        background: Color.alphaBlend(begin.background!, end.background!),
         blendColors: end.blendColors,
         segmentSpacing: lerpDouble(begin.segmentSpacing, end.segmentSpacing, t),
       );
