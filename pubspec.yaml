@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  equatable: ^2.0.5
-  collection: ^1.16.0
+  equatable:
+  collection:
 
 dev_dependencies:
   flutter_test:
